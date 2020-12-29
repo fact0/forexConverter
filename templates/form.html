@@ -1,0 +1,45 @@
+{% extends 'base.html' %} {% block title %}Forex Converter{% endblock%} {% block
+content%}
+<div class="col-12">
+	<h1 class="display-3">Currency Converter</h1>
+</div>
+<div class="col-4">
+	<div class="form-group mt-3">
+		<form action="/convert">
+			<label for="">Converting From:</label>
+			<input
+				type="text"
+				class="form-control mb-3"
+				name="currency-from"
+				placeholder="Enter three letter country code..."
+			/>
+			<label for="">Converting to:</label>
+			<input
+				type="text"
+				class="form-control mb-3"
+				name="currency-to"
+				placeholder="Enter three letter country code..."
+			/>
+			<label for="">Amount:</label>
+			<input
+				type="text"
+				class="form-control mb-3"
+				name="currency-amnt"
+				placeholder="Enter the amount to be converted..."
+			/>
+			<button type="submit" class="btn btn-block btn-primary mt-4">Convert</button>
+		</form>
+	</div>
+</div>
+<div class="col-12 mt-3">
+	<p>
+		Original Amount:
+		<b>{{ csymbolfrom }} {{ camnt }}</b>
+	</p>
+</div>
+	<p>
+		Converted Amount:
+		<b>{{ csymbolto }} {{ result }}</b>
+	</p>
+</div>
+{% endblock %}

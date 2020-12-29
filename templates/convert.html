@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% block title %}Forex Converter{% endblock%} {% block
+content%}
+<div class="col-12">
+	<h1 class="display-3">Currency Converter</h1>
+</div>
+<div class="col-4">
+	<div class="form-group mt-3">
+		<form action="/convert">
+			<label for="">Converting From:</label>
+			<input
+				type="text"
+				class="form-control mb-3"
+				name="currency-from"
+				id=""
+				placeholder="Enter three letter country code..."
+			/>
+			<label for="">Converting to:</label>
+			<input
+				type="text"
+				class="form-control mb-3"
+				name="currency-to"
+				id=""
+				placeholder="Enter three letter country code..."
+			/>
+			<label for="">Amount:</label>
+			<input
+				type="text"
+				class="form-control mb-3"
+				name="currency-amnt"
+				id=""
+				placeholder="Enter the amount to be converted..."
+			/>
+			<button type="submit" class="btn btn-block btn-primary mt-4">Convert</button>
+		</form>
+	</div>
+</div>
+{% endblock %}
