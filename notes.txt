@@ -1,0 +1,3 @@
+time taken: 5 hours.
+
+This wasn't terribly difficult but I really didn't know where to start. I think the tests could be a bit better but i wasn't sure how much to do with them being dependant on the forex calculator and how it calls information.
